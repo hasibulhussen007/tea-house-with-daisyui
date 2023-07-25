@@ -26,7 +26,8 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'gradient-start': '#FF8938',
+                        'gradient-end': '#F00',
                     }
                 }
             }
@@ -36,8 +37,8 @@
 
 <body class=".font-manrope">
     <header class="container mx-auto">
-        <div class="hero">
-            <div class="hero-content flex-col lg:flex-row">
+        <div class="my-32">
+            <div class="flex justify-between flex-col lg:flex-row">
                 <div>
                     <h1 class="text-7xl font-extrabold">
                         It's good <br>
@@ -45,7 +46,9 @@
                         Tea House</h1>
                     <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction <br>
                         To Your Taste Buds.</p>
-                    <button class="btn btn-primary">Explore More</button>
+                    <button class="btn bg-gradient-to-r from-[#F00] to-[#FF8938]">Explore More
+                        <i class="fa-solid fa-angles-right"></i>
+                    </button>
                 </div>
                 <div>
                     <img src="./images/banner.png" class="max-w-sm" />
@@ -230,39 +233,49 @@
 
         </section>
     </main>
-    <footer class="footer p-10 bg-base-200 text-base-content">
-        <div>
-          <span class="footer-title">Services</span> 
-          <a class="link link-hover">Branding</a> 
-          <a class="link link-hover">Design</a> 
-          <a class="link link-hover">Marketing</a> 
-          <a class="link link-hover">Advertisement</a>
-        </div> 
-        <div>
-          <span class="footer-title">Company</span> 
-          <a class="link link-hover">About us</a> 
-          <a class="link link-hover">Contact</a> 
-          <a class="link link-hover">Jobs</a> 
-          <a class="link link-hover">Press kit</a>
-        </div> 
-        <div>
-          <span class="footer-title">Legal</span> 
-          <a class="link link-hover">Terms of use</a> 
-          <a class="link link-hover">Privacy policy</a> 
-          <a class="link link-hover">Cookie policy</a>
-        </div> 
-        <div>
-          <span class="footer-title">Newsletter</span> 
-          <div class="form-control w-80">
-            <label class="label">
-              <span class="label-text">Enter your email address</span>
-            </label> 
-            <div class="relative">
-              <input type="text" placeholder="username@site.com" class="input input-bordered w-full pr-16" /> 
-              <button class="btn btn-primary absolute top-0 right-0 rounded-l-none">Subscribe</button>
-            </div>
-          </div>
+    <footer class="px-4 lg:px-48 py-10 text-base-content bg-gradient-to-r from-[#ff00001a] to-[#ff89381a] ">
+        <div class="flex justify-between my-24">
+            <img src="./images/cup.png" alt="">
+            <!-- <p> Ready to get started? </p>
+            <button class="btn bg-gradient-to-r from-[#F00] to-[#FF8938]">Get Started</button> -->
         </div>
+        <div class="footer">
+            <div>
+                <span class="footer-title">Services</span> 
+                <a class="link link-hover">Branding</a> 
+                <a class="link link-hover">Design</a> 
+                <a class="link link-hover">Marketing</a> 
+                <a class="link link-hover">Advertisement</a>
+              </div> 
+              <div>
+                <span class="footer-title">Company</span> 
+                <a class="link link-hover">About us</a> 
+                <a class="link link-hover">Contact</a> 
+                <a class="link link-hover">Jobs</a> 
+                <a class="link link-hover">Press kit</a>
+              </div> 
+              <div>
+                <span class="footer-title">Legal</span> 
+                <a class="link link-hover">Terms of use</a> 
+                <a class="link link-hover">Privacy policy</a> 
+                <a class="link link-hover">Cookie policy</a>
+              </div> 
+              <div>
+                <span class="footer-title">Newsletter</span> 
+                <div class="form-control w-80">
+                  <label class="label">
+                    <span class="label-text">Enter your email address</span>
+                  </label> 
+                  <div class="relative">
+                    <input type="text" placeholder="Email address" class="py-4 bg-transparent border-b-2 border-black outline-none" /> 
+                    <button class="btn text-white absolute top-0 right-0 rounded-full bg-gradient-to-r from-[#F00] to-[#FF8938]"> <i class="fa-solid fa-angles-right"></i> </button>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="mt-10 text-center">
+            <p>Copyright © 2023 - All right reserved by Tea House Ltd</p>
+          </div>
       </footer>
 
 </body>
