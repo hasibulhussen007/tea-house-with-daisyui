@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
+    <link rel="shortcut icon" href="./images/vectorstock_35077656.png" type="image/x-icon">
     <!-- tailwind and daisy Ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/4bbeb66a6e.js" crossorigin="anonymous"></script>
     <!-- google font manrope -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,14 +35,104 @@
 </head>
 
 <body class=".font-manrope">
-    <header>
+    <header class="container mx-auto">
+        <div class="hero">
+            <div class="hero-content flex-col lg:flex-row">
+                <div>
+                    <h1 class="text-7xl font-extrabold">
+                        It's good <br>
+                        tea time at The <br>
+                        Tea House</h1>
+                    <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction <br>
+                        To Your Taste Buds.</p>
+                    <button class="btn btn-primary">Explore More</button>
+                </div>
+                <div>
+                    <img src="./images/banner.png" class="max-w-sm" />
+                    <!-- rating badge -->
+                    <div class="-mt-16 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-56 h-24 rounded-xl">
+                        <i class="fa-solid fa-star text-3xl text-amber-400"></i>
+                        <div>
+                            <h3 class="text-3xl">5.00</h3>
+                            <p>Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </header>
-    <main>
+    <main class="container mx-auto">
+        <!-- Featured section -->
+        <section class="text-center my-24">
+            <h1 class="text-5xl font-extrabold mb-5">Our Featured Products</h1>
+            <p class="lg:max-w-3xl mx-auto mb-10">There are many variations of passages of Lorem Ipsum available, but
+                the majority have suffered alteration in some form, by injected humour, or randomised words which don't
+                look even slightly believable. </p>
+            <!-- featured tea card container -->
+            <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                <!-- 1st card -->
+                <div class="card  p-8 bg-gradient-to-r from-[#F4F4F4] to-[#f4f4f400] shadow-xl">
+                    <figure><img src="./images/tea-1.png" alt="Shoes" /></figure>
+                    <div class="card-body justify-center">
+                        <h2 class="text-2xl font-bold">Milk Tea</h2>
+                        <p>Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+                <!-- 2nd card -->
+                <div class="card  p-8 bg-gradient-to-r from-[#F4F4F4] to-[#f4f4f400] shadow-xl">
+                    <figure><img src="./images/tea-2.png" alt="Shoes" /></figure>
+                    <div class="card-body justify-center">
+                        <h2 class="text-2xl font-bold">Black Tea</h2>
+                        <p>Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+                <!-- 3rd card -->
+                <div class="card  p-8 bg-gradient-to-r from-[#F4F4F4] to-[#f4f4f400] shadow-xl">
+                    <figure><img src="./images/tea-3.png" alt="Shoes" /></figure>
+                    <div class="card-body justify-center">
+                        <h2 class="text-2xl font-bold">Lemon Tea</h2>
+                        <p>Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+                <!-- 4th card -->
+                <div class="card  p-8 bg-gradient-to-r from-[#F4F4F4] to-[#f4f4f400] shadow-xl">
+                    <figure><img src="./images/tea-4.png" alt="Shoes" /></figure>
+                    <div class="card-body justify-center">
+                        <h2 class="text-2xl font-bold">Green Tea</h2>
+                        <p>Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- great tea section -->
+        <section class="my-24 gap-12 flex flex-col lg:flex-row">
+            <div class="grid gap-8 grid-cols-1 md:grid-cols-2 flex-1">
+                <div class="rounded-xl h-36 opacity-10 bg-gradient-to-r from-[#F00] to-[#FF8938]"></div>
+                <div class="row-span-2 bg-[#e6a6231a] rounded-xl px-8 py-12 flex justify-center">
+                    <img src="./images/fresh-1.png" alt="">
+                </div>
+                <div class="row-span-2 bg-[#5776391A] rounded-xl px-8 py-12 flex justify-center">
+                    <img src="./images/fresh-1.png" alt="">
+                </div>
+                <div class="rounded-xl h-36 opacity-10 bg-gradient-to-r from-[#D9D9D9] to-[#FFFFFF]"></div>
+
+            </div>
+            <div class="space-y-5 flex-1">
+                <h3 class="text-5xl font-extrabold">Great Tea, Freshly <br> Presented</h3>
+                <p>The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.</p>
+                <h4 class="text-xl font-extrabold mt-8">Unique Taste</h4>
+                <p>A Unique and different style from other teapots gives a luxurious and minimalist impression</p>
+                <h4 class="text-xl font-extrabold">Premium Quality</h4>
+                <p>Premium Quality that makes tea more elegant and more durable when you use it.</p>
+            </div>
+
+        </section>
 
     </main>
     <footer>
-        
+
     </footer>
 
 </body>
